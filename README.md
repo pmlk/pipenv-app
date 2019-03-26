@@ -17,11 +17,13 @@ setup(
     version='0.0.0',
     include_package_data=True,
     # new way
-    install_requires=['pipenvdependency @ git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency'],
+    install_requires=[
+        'pipenvdependency @ git+https://github.com/pmlk/pipenv-dependency.git@master'
+    ],
 
     # old way
     # install_requires=['PipenvDependency==0.0.0'],
-    # dependency_links=["git+https://github.com/pmlk/pipenv-dependency.git@master#egg=PipenvDependency-0.0.0"],
+    # dependency_links=["git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency-0.0.0"],
 )
 ```
 
@@ -41,7 +43,7 @@ $ pipenv install -e .
 Creating a virtualenv for this project…
 Pipfile: /Users/<username>/SoftwareDevelopment/pipenv-app/Pipfile
 Using /usr/local/Cellar/pipenv/2018.11.26_2/libexec/bin/python3.7 (3.7.2) to create virtualenv…
-⠸ Creating virtual environment...Already using interpreter /usr/local/Cellar/pipenv/2018.11.26_2/libexec/bin/python3.7
+⠹ Creating virtual environment...Already using interpreter /usr/local/Cellar/pipenv/2018.11.26_2/libexec/bin/python3.7
 Using real prefix '/usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7'
 New python executable in /Users/<username>/.local/share/virtualenvs/pipenv-app-vN89ij2s/bin/python3.7
 Also creating executable in /Users/<username>/.local/share/virtualenvs/pipenv-app-vN89ij2s/bin/python
@@ -66,13 +68,13 @@ Locking [packages] dependencies…
 [pipenv.exceptions.ResolutionFailure]:       resolved_tree = resolver.resolve()
 [pipenv.exceptions.ResolutionFailure]:   File "/usr/local/Cellar/pipenv/2018.11.26_2/libexec/lib/python3.7/site-packages/pipenv/utils.py", line 395, in resolve
 [pipenv.exceptions.ResolutionFailure]:       raise ResolutionFailure(message=str(e))
-[pipenv.exceptions.ResolutionFailure]:       pipenv.exceptions.ResolutionFailure: ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency from git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency
+[pipenv.exceptions.ResolutionFailure]:       pipenv.exceptions.ResolutionFailure: ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master from git+https://github.com/pmlk/pipenv-dependency.git@master
 [pipenv.exceptions.ResolutionFailure]:       No versions found
 [pipenv.exceptions.ResolutionFailure]: Warning: Your dependencies could not be resolved. You likely have a mismatch in your sub-dependencies.
   First try clearing your dependency cache with $ pipenv lock --clear, then try the original command again.
  Alternatively, you can use $ pipenv install --skip-lock to bypass this mechanism, then run $ pipenv graph to inspect the situation.
   Hint: try $ pipenv lock --pre if it is a pre-release dependency.
-ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency from git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency
+ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master from git+https://github.com/pmlk/pipenv-dependency.git@master
 No versions found
 Was https://pypi.org/simple reachable?
 [pipenv.exceptions.ResolutionFailure]:       req_dir=requirements_dir
@@ -82,13 +84,13 @@ Was https://pypi.org/simple reachable?
 [pipenv.exceptions.ResolutionFailure]:       resolved_tree = resolver.resolve()
 [pipenv.exceptions.ResolutionFailure]:   File "/usr/local/Cellar/pipenv/2018.11.26_2/libexec/lib/python3.7/site-packages/pipenv/utils.py", line 395, in resolve
 [pipenv.exceptions.ResolutionFailure]:       raise ResolutionFailure(message=str(e))
-[pipenv.exceptions.ResolutionFailure]:       pipenv.exceptions.ResolutionFailure: ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency from git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency
+[pipenv.exceptions.ResolutionFailure]:       pipenv.exceptions.ResolutionFailure: ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master from git+https://github.com/pmlk/pipenv-dependency.git@master
 [pipenv.exceptions.ResolutionFailure]:       No versions found
 [pipenv.exceptions.ResolutionFailure]: Warning: Your dependencies could not be resolved. You likely have a mismatch in your sub-dependencies.
   First try clearing your dependency cache with $ pipenv lock --clear, then try the original command again.
  Alternatively, you can use $ pipenv install --skip-lock to bypass this mechanism, then run $ pipenv graph to inspect the situation.
   Hint: try $ pipenv lock --pre if it is a pre-release dependency.
-ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency from git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency
+ERROR: ERROR: Could not find a version that matches pipenvdependency@ git+https://github.com/pmlk/pipenv-dependency.git@master from git+https://github.com/pmlk/pipenv-dependency.git@master
 No versions found
 Was https://pypi.org/simple reachable?
 ```

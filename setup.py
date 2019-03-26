@@ -7,7 +7,7 @@ setup(
     include_package_data=True,
     # new way
     install_requires=[
-        'pipenvdependency@git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency'
+        'pipenvdependency @ git+https://github.com/pmlk/pipenv-dependency.git@master'
     ],
 
     # old way
