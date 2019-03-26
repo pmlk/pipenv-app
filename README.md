@@ -107,9 +107,9 @@ pipenvapp==0.0.0
 
 ## Old, now deprecated way
 
-The following used to work for `pip` versions that respected the `--process_dependency_link` flag.
+The following used to work for `pip` versions that respected the `--process-dependency-link` flag.
 
-This approach indirectly makes use of the `pip` flag `--process_dependency_links` which is~/was~~ **deprecated**. ~
+This approach indirectly makes use of the `pip` flag `--process-dependency-links` which is~/was~~ **deprecated**. ~
 Read [here](https://github.com/pypa/pip/issues/3939) and [here](https://github.com/pypa/pip/issues/4187) for more information.
 
 ````python
@@ -129,7 +129,7 @@ setup(
 ### Installation
 
 ```bash
-# set environment variable for --process_dependency_links
+# set environment variable for --process-dependency-links
 $ export PIP_PROCESS_DEPENDENCY_LINKS=1
 $ git clone https://github.com/pmlk/pipenv-app.git
 $ cd pipenv-app
