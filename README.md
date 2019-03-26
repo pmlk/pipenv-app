@@ -17,7 +17,7 @@ setup(
     version='0.0.0',
     include_package_data=True,
     # new way
-    install_requires=['pipenvdependency @ git+https://github.com/pmlk/pipenv-dependency.git@master'],
+    install_requires=['pipenvdependency @ git+https://github.com/pmlk/pipenv-dependency.git@master#egg=pipenvdependency'],
 
     # old way
     # install_requires=['PipenvDependency==0.0.0'],
